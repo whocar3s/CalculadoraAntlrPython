@@ -55,18 +55,19 @@ extern int yydebug;
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
     NUMBER = 258,                  /* NUMBER  */
-    ADD = 259,                     /* ADD  */
-    SUB = 260,                     /* SUB  */
-    MUL = 261,                     /* MUL  */
-    DIV = 262,                     /* DIV  */
-    ABS = 263,                     /* ABS  */
-    INC = 264,                     /* INC  */
-    DEC = 265,                     /* DEC  */
-    NOT = 266,                     /* NOT  */
-    EOL = 267,                     /* EOL  */
-    OP = 268,                      /* OP  */
-    CP = 269,                      /* CP  */
-    UMINUS = 270                   /* UMINUS  */
+    BOOL = 259,                    /* BOOL  */
+    ADD = 260,                     /* ADD  */
+    SUB = 261,                     /* SUB  */
+    MUL = 262,                     /* MUL  */
+    DIV = 263,                     /* DIV  */
+    ABS = 264,                     /* ABS  */
+    INC = 265,                     /* INC  */
+    DEC = 266,                     /* DEC  */
+    NOT = 267,                     /* NOT  */
+    EOL = 268,                     /* EOL  */
+    OP = 269,                      /* OP  */
+    CP = 270,                      /* CP  */
+    UMINUS = 271                   /* UMINUS  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -75,12 +76,13 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 10 "CalculadoraFB.y"
+#line 12 "CalculadoraFB.y"
+
 
     double dval;
-    bool bval;
 
-#line 84 "CalculadoraFB.tab.h"
+
+#line 86 "CalculadoraFB.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;

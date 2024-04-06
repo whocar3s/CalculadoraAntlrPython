@@ -10,8 +10,11 @@ int yyerror(char* s);
 %}
 
 %union{
+
     double dval;
+
 }
+
 %token <dval>  NUMBER
 %token <dval> BOOL
 %token ADD SUB MUL DIV ABS
@@ -62,7 +65,6 @@ primary: NUMBER
 bool_exp: BOOL
     | NOT bool_exp { $$ = !$2;}
     ;
-
 %%
 
 int main(double argc, char **argv)
