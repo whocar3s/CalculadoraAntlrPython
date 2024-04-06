@@ -105,9 +105,9 @@ El cual ejecutara las siguientes operaciones
 +5
 8--
 6++
-!True
-!False
-!!!True
+!true
+!false
+!!!true
 ```
 
 Y como resultado se obtendrá:
@@ -117,9 +117,9 @@ Y como resultado se obtendrá:
 5.00
 7.00
 7.00
+False
 True
-True
-True
+False
 ```
 
 -------
