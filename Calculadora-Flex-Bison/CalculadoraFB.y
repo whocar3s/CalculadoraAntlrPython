@@ -50,8 +50,8 @@ term: factor
     ;
 
 factor: primary
-    | INC primary { $$ = $2 + 1; }
-    | DEC primary { $$ = $2 - 1; }
+    | primary INC { $$ = $1 + 1; }
+    | primary DEC { $$ = $1 - 1; }
     | NOT primary { $$ = ($2 == 0) ? 1 : 0; }
     ;
 
