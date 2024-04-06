@@ -6,7 +6,7 @@
 
 1. Clonar el repositorio con `git clone https://github.com/whocar3s/CalculadoraAntlrPython.git`
 
-2. Acceder al proyecto
+2. Desde la consola acceder a la ruta donde se clono el proyecto y entrar a la carpeta `Calculadora-Antlr-Python3`
 3. Compilar el proyecto con el comando `antlr4 -visitor -Dlanguage=Python3 nombredelarchivo.g4`
 
 4. Ejecutar el `Test.py` con el comando `python3 Test.py` o `python3 Test.py archivo.txt` si se quiere leer un archivo de texto externo
@@ -123,3 +123,33 @@ False
 ```
 
 -------
+<br><br>
+
+# **Calculadora Flex y Bison**
+**Requisitos:** Para ejecutar este proyecto se debe tener instalado Flex, Bison y C.
+
+1. Clonar el repositorio con `git clone https://github.com/whocar3s/CalculadoraAntlrPython.git`
+
+2. Desde la consola acceder a la ruta donde se clono el proyecto y entrar a la carpeta `Calculadora-Flex-Bison`
+3. Compilar el proyecto con el comando `make`
+
+4. Ejecutar el `a.out` con el comando `./a.out`
+
+5. Escribir las operaciones a realizar
+
+<br>
+
+--------
+
+## **Pruebas**
+Para este caso se ejecutaron las mismas pruebas que para la cálculadora de Antlr4 y se obtuvieron los mismos resultados, como conclusión, ambas pruebas fueron exitosas en ambas cálculadoras.
+<br>
+
+--------
+
+## Miembros del grupo
+
+- Laura González
+- Camilo Madero
+- Paula Páez
+- Felipe Rodriguez
