@@ -6,7 +6,13 @@
 
 1. Clonar el repositorio con `git clone https://github.com/whocar3s/CalculadoraAntlrPython.git`
 
-2. Desde la consola acceder a la ruta donde se clono el proyecto y entrar a la carpeta `Calculadora-Antlr-Python3`
+2. Desde la consola acceder a la ruta donde se clono el proyecto y entrar a la carpeta en la cual se desee probar:
+    - Para probar operadores unarios: `Calculadora-Antlr-Python3`
+    - Para probar asociatividad por derecha: `cd Calculadora-Antlr-Python3(AsociatividadDerecha)`
+    - Para probar asociatividad por izquierda: `cd Calculadora-Antlr-Python3(AsociatividadIzquierda)`
+    - Parar probar precedencia de multiplicación `Calculadora-Antlr-Python3(PrecedenciaMultiplicacion)`
+    - Parar probar precedencia de suma `Calculadora-Antlr-Python3(PrecedenciaSuma)`
+    
 3. Compilar el proyecto con el comando `antlr4 -visitor -Dlanguage=Python3 nombredelarchivo.g4`
 
 4. Ejecutar el `Test.py` con el comando `python3 Test.py` o `python3 Test.py archivo.txt` si se quiere leer un archivo de texto externo
@@ -18,13 +24,14 @@
 --------
 
 ## **Pruebas**
+> **Info:** Pruebas realizadas en la calculadora  `Calculadora-Antlr-Python3` 
 
 ### **Asociatividad**: 
 La asociatividad indica como se agrupan los operandos de un operador cuando aparecen más de dos operandos, teniendo en cuenta esto, la calculadora posee la asociatividad por la izquierda.
 
 Para visualizar esta prueba ejecute:
 
-```
+``` bash
 python3 Test.py TestAsociatividad.txt
 ```
 
@@ -130,7 +137,13 @@ False
 
 1. Clonar el repositorio con `git clone https://github.com/whocar3s/CalculadoraAntlrPython.git`
 
-2. Desde la consola acceder a la ruta donde se clono el proyecto y entrar a la carpeta `Calculadora-Flex-Bison`
+2. Desde la consola acceder a la ruta donde se clono el proyecto y entrar a la carpeta en la cual se desee probar:
+    - Para probar operadores unarios: `Calculadora-Flex-Bison`
+    - Para probar asociatividad por derecha: `cd Calculadora-Flex-Bison(AsociatividadDerecha)`
+    - Para probar asociatividad por izquierda: `cd Calculadora-Flex-Bison(AsociatividadIzquierda)`
+    - Parar probar precedencia de multiplicación `Calculadora-Flex-Bison(PrecedenciaMultiplicacion)`
+    - Parar probar precedencia de suma `Calculadora-Flex-Bison(PrecedenciaSuma)`
+
 3. Compilar el proyecto con el comando `make`
 
 4. Ejecutar el `a.out` con el comando `./a.out`
@@ -142,6 +155,8 @@ False
 --------
 
 ## **Pruebas**
+> **Info:** Pruebas realizadas en la calculadora  `Calculadora-Antlr-Python3`
+
 Para este caso se ejecutaron las mismas pruebas que para la cálculadora de Antlr4 y se obtuvieron los mismos resultados, como conclusión, ambas pruebas fueron exitosas en ambas cálculadoras.
 <br>
 
